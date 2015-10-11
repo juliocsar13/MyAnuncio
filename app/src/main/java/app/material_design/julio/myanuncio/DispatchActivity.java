@@ -9,7 +9,7 @@ import com.parse.ParseUser;
 /**
  * Created by Julio on 10/10/2015.
  */
-public class DispatchLogin extends Activity {
+public class DispatchActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class DispatchLogin extends Activity {
         if (ParseUser.getCurrentUser() != null) {
             // Start an intent for the logged in activity
             // iniciar una intencion para conectar a la actividad
-            startActivity(new Intent(this, MapsActivity.class));
+            startActivity(new Intent(this, ListActivity.class));
         } else {
             // Start and intent for the logged out activity
             startActivity(new Intent(this, MainActivity.class));
