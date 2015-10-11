@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">MyAnuncio</string>
-
+    <string name="PARSE_APP_ID">tSiC5vcvt72jiTRpHwyMg5icbIm1bqHWf0gzGNtR</string>
+    <string name="PARSE_CLIENT_ID">4OgqOmfpHMaOBZo5cUkRhyyAbEtoakD8vc0REIbQ</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_maps">Map</string>
@@ -12,9 +13,9 @@
     <string name="prompt_username">Username</string>
     <string name="prompt_password">Password</string>
     <string name="prompt_password_again">Password Again</string>
-    <string name="error_intro">"Please "</string>
-    <string name="error_blank_username">enter a username</string>
-    <string name="error_blank_password">enter a password</string>
+    <string name="error_intro">"Por Favor "</string>
+    <string name="error_blank_username">ingrese un usuario</string>
+    <string name="error_blank_password">ingrese una contraseña</string>
     <string name="error_mismatched_passwords">enter the same password twice</string>
     <string name="error_join">", and "</string>
     <string name="error_end">.</string>
@@ -37,4 +38,7 @@
     <string name="settings_distance_format">%d feet</string>
     <string name="activity_post_title">Create a Post</string>
     <string name="character_count_placeholder">0/140</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title">AQUI EL MARICON DE ANTONIN TIENE QUE IMPLEMENTAR EL CARDVIEW Y RECICLERVIEW  O PUEDE OPTAR POR EL LISTVIEW
+    ES SU DECICION OE EL QUE QUIERA HACERLO :D</string>
 </resources>

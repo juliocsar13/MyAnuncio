@@ -13,7 +13,8 @@
         android:id="@+id/username_edit_text"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:hint="usuario"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -21,7 +22,8 @@
         android:id="@+id/password_edit_text"
         android:layout_below="@+id/username_edit_text"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:hint="contraseña"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -30,12 +32,13 @@
         android:layout_below="@+id/password_edit_text"
         android:imeActionId="@+id/edittext_action_register"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:hint="confirmar contraseña"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Registrarse"
         android:id="@+id/action_button"
         android:layout_below="@+id/password_again_edit_text"
         android:layout_centerHorizontal="true"

@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
         StartMaps();
 
-        Parse.enableLocalDatastore(this);
+        /*Parse.enableLocalDatastore(this);
         Parse.initialize(this, "tSiC5vcvt72jiTRpHwyMg5icbIm1bqHWf0gzGNtR", "4OgqOmfpHMaOBZo5cUkRhyyAbEtoakD8vc0REIbQ");
 
         ParseObject testObject = new ParseObject("TestObject");
         testObject.put("foo", "bar");
-        testObject.saveInBackground();
+        testObject.saveInBackground();*/
     }
 
     public void StartMaps(){

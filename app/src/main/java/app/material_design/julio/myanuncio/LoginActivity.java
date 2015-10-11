@@ -17,8 +17,6 @@ import android.widget.Toast;
 import com.parse.LogInCallback;
 import com.parse.ParseUser;
 
-import java.text.ParseException;
-
 public class LoginActivity extends AppCompatActivity {
 
     private EditText edtName;

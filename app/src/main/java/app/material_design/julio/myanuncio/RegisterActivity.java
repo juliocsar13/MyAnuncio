@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
@@ -59,7 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
         String username = usernameEditText.getText().toString().trim();
         String password = passwordEditText.getText().toString().trim();
         String passwordAgain = passwordAgainEditText.getText().toString().trim();
-
+        //validar los datos al registrarse
         // Validate the sign up data
         boolean validationError = false;
         StringBuilder validationErrorMessage = new StringBuilder(getString(R.string.error_intro));
@@ -82,7 +80,7 @@ public class RegisterActivity extends AppCompatActivity {
             validationErrorMessage.append(getString(R.string.error_mismatched_passwords));
         }
         validationErrorMessage.append(getString(R.string.error_end));
-
+        // si hay un error en validacion, mostrar el error
         // If there is a validation error, display the error
         if (validationError) {
             Toast.makeText(RegisterActivity.this, validationErrorMessage.toString(), Toast.LENGTH_LONG)
@@ -91,15 +89,18 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         // Set up a progress dialog
+        //se establece un dialogo de progreso
+
         final ProgressDialog dialog = new ProgressDialog(RegisterActivity.this);
         dialog.setMessage(getString(R.string.progress_signup));
         dialog.show();
-
+        // establecer un nuevo usuario parse
         // Set up a new Parse user
         ParseUser user = new ParseUser();
         user.setUsername(username);
         user.setPassword(password);
 
+        //llamar al metodo de registro
         // Call the Parse signup method
         user.signUpInBackground(new SignUpCallback() {
             @Override
